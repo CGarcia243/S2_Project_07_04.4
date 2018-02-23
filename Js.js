@@ -14,8 +14,10 @@ var places = []; // new array to store entered places
 var i = 1; // counter variable to track array indexes
 
 // function to add input to array and then generate list after 5th submission
+"use strict";
+
 function processInput() {
-    "use strict"
+
     places[i] = document.getElementById("placeBox").value; // add entered value to array
     document.getElementById("placeBox").value = "" // clear text box
     if (i < 5) { // iterate counter variable
